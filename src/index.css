@@ -1,0 +1,86 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:disabled {
+  cursor: none;
+  background: gainsboro;
+  pointer-events: none;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  padding: 48px;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.text-winner {
+  color: red;
+
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.control-button {
+  background: lightblue;
+  padding: 8px 16px;
+  transition: 0.3s;
+}
+
+.control-button:hover {
+  opacity: 0.7;
+}
+
+.board-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: fit-content;
+  gap: 8px;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: transparent;
+  font-size: 24px;
+}
+
+.square:hover {
+  opacity: 0.5;
+}
+
+.square-highlighted {
+  border: 1px solid red;
+}
+
