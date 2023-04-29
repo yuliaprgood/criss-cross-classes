@@ -1,4 +1,3 @@
-Criss-cross game
 Julia Peregudova
 
 Install dependencies: yarn install
